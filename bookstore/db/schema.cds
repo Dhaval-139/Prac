@@ -15,8 +15,8 @@ entity Books : managed {
 }
 
 entity Authors {
-  aithorName : String;
+  key authorName : String;
   isbn       : isbn;
-  ID         : UUID;
+  ID         : Integer;
    books    : Association to Books;
 }
